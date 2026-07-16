@@ -1,6 +1,6 @@
 ---
-name: codeapps-architecture-compliance
-description: Use when a repository must be made compliant with Power Apps Code Apps architecture, when preparing an app for Dataverse or Power Apps deployment, when the user asks to scan, audit, or fix a Code App, or in the first session after this skill is installed in a project.
+name: make-this-into-code-apps
+description: Use when a repository must be made compliant with Power Apps Code Apps architecture, when preparing an app for Dataverse or Power Apps deployment, when the user asks to scan, audit, or fix a Code App, asks to "make this into a code app" / "make this Power Apps compliant", or in the first session after this skill is installed in a project.
 license: MIT
 compatibility: Power Apps Code Apps (Vite + React/TS + @microsoft/power-apps).
 metadata:
