@@ -6,19 +6,17 @@ Architecture ground truth comes from [CodeSpec](https://github.com/voyager163/co
 
 ## Install — copy-paste this prompt into your coding agent
 
-> Replace `<YOUR_REPO_URL>` with this repository's GitHub URL before pasting.
-
 ```text
-Register the CodeApps Architecture skills from <YOUR_REPO_URL> as global skills, then set up this repository.
+Register the CodeApps Architecture skills as global skills, then set up this repository.
 
-1. Clone <YOUR_REPO_URL> (main branch) into a temporary folder.
-2. Copy every folder under its skills/ directory into your user-level skills directory, based on which agent you are:
+1. Locate the skill pack source. If the current workspace already contains a skills/ directory with codeapps-architecture-compliance inside it (i.e. you're running this from inside the CodeApps Architecture skill pack repo itself), use this workspace directly as the source and skip to step 2 — no cloning needed. Otherwise, check `git remote get-url origin` here for the skill pack's repo URL; if that doesn't resolve it, ask me for the URL. Then clone it (main branch) into a temporary folder and use that as the source.
+2. Copy every folder under the source's skills/ directory into your user-level skills directory, based on which agent you are:
    - Claude Code: ~/.claude/skills/
    - GitHub Copilot CLI: ~/.copilot/skills/
    - Codex, Gemini CLI, Antigravity, or any other agent: ~/.agents/skills/
    (On Windows, the same folders under the user profile directory.)
    If your runtime does not auto-discover skills from that path, additionally register each skill by listing its name, description, and the path to its SKILL.md in a "Skills" section of this repository's AGENTS.md, so you load them every session.
-3. Delete the temporary clone, then confirm the installation by listing the nine skills you installed.
+3. If you cloned a temporary folder in step 1, delete it now. Confirm the installation by listing the nine skills you installed.
 4. Now read the installed codeapps-architecture-compliance skill and follow it: propose a full architecture compliance scan of the current repository. With my approval, produce the compliance report, the "Dataverse Required Tables.md" file, and the project AGENTS.md.
 5. Do not modify any app code until I approve the remediation plan from the report.
 ```
