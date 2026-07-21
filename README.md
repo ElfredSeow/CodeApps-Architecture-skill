@@ -14,7 +14,7 @@ Register the CodeApps Architecture skills as global skills, then take this repos
 Do NOT deploy to Power Apps: do not run `pac code push`, do not provision Dataverse, do not install the app into a Power Apps environment. Stop at compliant source code in a GitHub repo.
 
 ── Setup: install the skills ──
-1. Locate the skill pack source. If the current workspace already contains a skills/ directory with make-this-into-code-apps inside it (i.e. you're inside the CodeApps Architecture skill pack repo itself), use this workspace as the source and skip to step 2. Otherwise check `git remote get-url origin` for the skill pack's repo URL; if that doesn't resolve it, ask me for the URL. Then clone it (main branch) into a temporary folder and use that as the source.
+1. Locate the skill pack source. If the current workspace already contains a skills/ directory with make-this-into-code-apps inside it (i.e. you're inside the CodeApps Architecture skill pack repo itself), use this workspace as the source and skip to step 2. Otherwise the skill pack lives at https://github.com/ElfredSeow/CodeApps-Architecture-skill (main branch) — clone that into a temporary folder and use it as the source. Do not ask me for the URL; it is this repo.
 2. Copy every folder under the source's skills/ directory into your user-level skills directory, based on which agent you are:
    - Claude Code: ~/.claude/skills/
    - GitHub Copilot CLI: ~/.copilot/skills/
