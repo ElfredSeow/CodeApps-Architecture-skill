@@ -1,6 +1,6 @@
 # AGENTS.md — Power Apps Code Apps project
 
-<!-- Installed by codeapps-architecture-compliance. Every AI agent working in this
+<!-- Installed by make-this-into-code-apps. Every AI agent working in this
 repository reads this file at the start of every session and follows it. -->
 
 This repository is a **Power Apps Code App** (Vite + React + strict TypeScript + `@microsoft/power-apps`). It deploys to Power Apps and uses Dataverse / Power Platform connectors for all data.
@@ -29,7 +29,7 @@ When a task matches a row below, load and follow that skill before acting:
 | Read-only Dataverse data inspection | codeapp-dataverse-query |
 | Solutions, pipelines, environment promotion | codeapps-alm-engineer |
 | Build and deploy (`pac code push`) | codeapp-deploy |
-| Compliance scan / audit / pre-deploy check | codeapps-architecture-compliance |
+| Compliance scan / audit / pre-deploy check | make-this-into-code-apps |
 
 ## 3. Architecture rules (non-negotiable)
 
